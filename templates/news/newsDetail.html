@@ -1,0 +1,10 @@
+{% extends "news/newsBase.html" %}
+{% block title %} 新闻详情 {% endblock %}
+{% block content %}
+<div class="container">
+    <p>{{news.title}}</p>
+    <p>{{news.author.username}}</p>
+    <p>{{news.content}}</p>
+</div>
+{% endblock %}
+

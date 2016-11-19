@@ -1,0 +1,9 @@
+{% extends "notice/noticeBase.html" %}
+{% block title %} 通知公告 {% endblock %}
+{% block content %}
+    {% for notice in notice_list %}
+    <div class="container">
+        <a href="/notice/detail/{{notice.id}}">{{ notice.title }} </a>{{notice.pub_time|date:"Y年m月d日"}}
+    </div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "news/newsBase.html" %}
+{% block title %} 新闻动态 {% endblock %}
+{% block content %}
+    {% for news in news_list %}
+    <div class="container">
+        <a href="/news/detail/{{news.id}}">{{ news.title }} </a>{{news.pub_time|date:"Y年m月d日"}}
+    </div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "notice/noticeBase.html" %}
+{% block title %} 通知详情 {% endblock %}
+{% block content %}
+<div class="container">
+    <p>{{notice.title}}</p>
+    <p>{{notice.author.username}}</p>
+    <p>{{notice.content}}</p>
+</div>
+{% endblock %}
+
