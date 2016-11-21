@@ -45,6 +45,13 @@ html, body {
 }
 /*--------------------------jumbotron ENDS--------------------------*/
 
+/*--------------------------login and regist STARTS--------------------------*/
+.login {
+  display: inline-block;
+  float: right;
+  padding-right: 10px;
+}
+/*--------------------------login and regist STARTS--------------------------*/
 
 /*--------------------------search-box STARTS--------------------------*/
 .search-box {
@@ -304,7 +311,7 @@ html, body {
   width: 1140px;
   margin: 0 auto;
   padding-top: 15px;
-  min-height: calc(100% - 190px - 221px);
+  min-height: calc(100% - 210px - 221px);
   overflow: hidden;
 }
 
