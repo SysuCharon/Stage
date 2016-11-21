@@ -1,14 +1,26 @@
 {% extends "base.html" %}
+{% block title %} 学术交流 {% endblock %}
+{% block content %}
+    <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 sidebar-offcanvas" id="sidebar" style="padding-top:20px">
+          <div id="list" class="list-group-item">
+            <ul class="nav nav-pills nav-stacked">
+              <li><h3>2016</h3></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><h3>2015</h3></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-lg-9 col-md-9 col-xs-9 col-sm-9 sidebar-offcanvas" id="sidebar" style="padding-top:20px">
+          <p>
+            如图8所示，此板块的左侧边栏中包含一个两级的目录，其中第一级标题是学术会议召开的年份（按从晚到早的顺序排列），第二级标题是学术会议的名称。
+			当点击学术会议的名称时，板块的右侧主体部分需以文字、图片、视频的形式，展示的该学术会议的详情与报导。
 
-{% block nav %}
-<a class="blog-nav-item" href="/">首页</a>
-<a class="blog-nav-item" href="/project">关于项目</a>
-<a class="blog-nav-item" href="/team">研究团队</a>
-<a class="blog-nav-item" href="/news">新闻动态</a>
-<a class="blog-nav-item" href="/notice">通知公告</a>
-<a class="blog-nav-item" href="/progress">项目进展</a>
-<a class="blog-nav-item" href="/article">发表文章</a>
-<a class="blog-nav-item active" href="/academic">学术交流</a>
-<a class="blog-nav-item" href="/tools">数据/工具</a>
-<a class="blog-nav-item" href="/analysis">数据分析</a>
+          </p>
+        </div>
+    </div>
 {% endblock %}

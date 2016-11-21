@@ -1,14 +1,23 @@
 {% extends "base.html" %}
-
-{% block nav %}
-<a class="blog-nav-item" href="/">首页</a>
-<a class="blog-nav-item" href="/project">关于项目</a>
-<a class="blog-nav-item" href="/team">研究团队</a>
-<a class="blog-nav-item" href="/news">新闻动态</a>
-<a class="blog-nav-item" href="/notice">通知公告</a>
-<a class="blog-nav-item" href="/progress">项目进展</a>
-<a class="blog-nav-item" href="/article">发表文章</a>
-<a class="blog-nav-item" href="/academic">学术交流</a>
-<a class="blog-nav-item active" href="/tools">数据/工具</a>
-<a class="blog-nav-item" href="/analysis">数据分析</a>
+{% block title %} 学术交流 {% endblock %}
+{% block content %}
+    <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 sidebar-offcanvas" id="sidebar" style="padding-top:20px">
+          <div id="list" class="list-group-item">
+            <ul class="nav nav-pills nav-stacked">
+              <li><a href="#">团队数据共享</a></li>
+              <li><a href="#">站外数据库</a></li>
+              <li><a href="#">常用分析工具</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-lg-9 col-md-9 col-xs-9 col-sm-9 sidebar-offcanvas" id="sidebar" style="padding-top:20px">
+          <p>
+            1）	项目组团队数据共享（包括项目组使用的源数据链接，项目组进行数据分析后得到的结果，项目组公开发表的文章涉及到的可共享的数据的链接）；
+			2）	站外数据库（商业化数据库）链接；
+			3）	常用分析工具链接
+          </p>
+        </div>
+        
 {% endblock %}
